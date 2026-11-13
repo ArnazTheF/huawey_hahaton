@@ -1,0 +1,213 @@
+{
+  "source": "skillstate-harder-v1/state, accepted responses only; no API credentials or prompts",
+  "records": [
+    {
+      "task_id": "net_revenue",
+      "response": "{\"state_patch\":{\"facts\":{\"f1\":\"Task: sum net paid revenue (paid - refunds) for west-region customers, months 4-9, excluding cancelled orders and their refunds.\",\"h1\":\"Need to inspect CSV headers to determine column names for region, month, amount, status, and join keys.\"}},\"action\":{\"action\":\"bash\",\"command\":\"head -n 5 customers.csv orders.csv refunds.csv\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "f1": "Task: sum net paid revenue (paid - refunds) for west-region customers, months 4-9, excluding cancelled orders and their refunds.",
+          "h1": "Need to inspect CSV headers to determine column names for region, month, amount, status, and join keys."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "net_revenue",
+      "response": "{\"state_patch\":{\"facts\":{\"f2\":\"Headers confirmed: customers(customer_id,region); orders(order_id,customer_id,month,status,amount_cents); refunds(order_id,refund_cents).\",\"f3\":\"Order_id is the join key for refunds; status values include 'paid' and 'cancelled'.\"},\"open_questions\":{\"q1\":\"Are there statuses other than paid/cancelled that should be treated as paid?\"}},\"action\":{\"action\":\"bash\",\"command\":\"python3 -c \\\"import csv; s=set(r['status'] for r in csv.DictReader(open('orders.csv'))); print(s)\\\"\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "f1": "Task: sum net paid revenue (paid - refunds) for west-region customers, months 4-9, excluding cancelled orders and their refunds.",
+          "h1": "Need to inspect CSV headers to determine column names for region, month, amount, status, and join keys.",
+          "f2": "Headers confirmed: customers(customer_id,region); orders(order_id,customer_id,month,status,amount_cents); refunds(order_id,refund_cents).",
+          "f3": "Order_id is the join key for refunds; status values include 'paid' and 'cancelled'."
+        },
+        "hypotheses": {},
+        "open_questions": {
+          "q1": "Are there statuses other than paid/cancelled that should be treated as paid?"
+        },
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "net_revenue",
+      "response": "{\"state_patch\":{\"facts\":{\"f4\":\"Status values confirmed: only 'paid' and 'cancelled'. No other statuses exist.\",\"f5\":\"Refunds join on order_id. Cancelled orders and their refunds are excluded entirely.\"},\"open_questions\":{}},\"action\":{\"action\":\"bash\",\"command\":\"python3 -c \\\"\\nimport csv\\n\\n# Load west-region customers\\nwest = set()\\nwith open('customers.csv') as f:\\n    for r in csv.DictReader(f):\\n        if r['region'].strip().lower() == 'west':\\n            west.add(r['customer_id'])\\n\\n# Load refunds by order_id\\nrefunds = {}\\nwith open('refunds.csv') as f:\\n    for r in csv.DictReader(f):\\n        oid = r['order_id']\\n        refunds[oid] = refunds.get(oid, 0) + int(r['refund_cents'])\\n\\n# Process orders\\ntotal = 0\\nwith open('orders.csv') as f:\\n    for r in csv.DictReader(f):\\n        if r['customer_id'] not in west:\\n            continue\\n        if r['status'].strip().lower() == 'cancelled':\\n            continue\\n        m = int(r['month'])\\n        if m < 4 or m > 9:\\n            continue\\n        amt = int(r['amount_cents'])\\n        ref = refunds.get(r['order_id'], 0)\\n        total += amt - ref\\n\\nprint(total)\\n\\\"\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "f1": "Task: sum net paid revenue (paid - refunds) for west-region customers, months 4-9, excluding cancelled orders and their refunds.",
+          "h1": "Need to inspect CSV headers to determine column names for region, month, amount, status, and join keys.",
+          "f2": "Headers confirmed: customers(customer_id,region); orders(order_id,customer_id,month,status,amount_cents); refunds(order_id,refund_cents).",
+          "f3": "Order_id is the join key for refunds; status values include 'paid' and 'cancelled'.",
+          "f4": "Status values confirmed: only 'paid' and 'cancelled'. No other statuses exist.",
+          "f5": "Refunds join on order_id. Cancelled orders and their refunds are excluded entirely."
+        },
+        "hypotheses": {},
+        "open_questions": {
+          "q1": "Are there statuses other than paid/cancelled that should be treated as paid?"
+        },
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "net_revenue",
+      "response": "{\"state_patch\": {\"facts\": {\"f6\": \"Computed total net paid revenue for west-region customers, months 4-9, excluding cancelled: 2864210 cents.\"}, \"open_questions\": {\"q1\": null}}, \"action\": {\"action\": \"final\", \"answer\": \"2864210\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "f1": "Task: sum net paid revenue (paid - refunds) for west-region customers, months 4-9, excluding cancelled orders and their refunds.",
+          "h1": "Need to inspect CSV headers to determine column names for region, month, amount, status, and join keys.",
+          "f2": "Headers confirmed: customers(customer_id,region); orders(order_id,customer_id,month,status,amount_cents); refunds(order_id,refund_cents).",
+          "f3": "Order_id is the join key for refunds; status values include 'paid' and 'cancelled'.",
+          "f4": "Status values confirmed: only 'paid' and 'cancelled'. No other statuses exist.",
+          "f5": "Refunds join on order_id. Cancelled orders and their refunds are excluded entirely.",
+          "f6": "Computed total net paid revenue for west-region customers, months 4-9, excluding cancelled: 2864210 cents."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "versioned_route",
+      "response": "{\"state_patch\":{\"facts\":{\"start\":\"Start at kb/node_63520.json; rule: at each node pick max revision with status active, follow next until terminal.\"}},\"action\":{\"action\":\"bash\",\"command\":\"cd kb && python3 -c \\\"import json; d=json.load(open('node_63520.json')); print(json.dumps(d, indent=1)[:2000])\\\"\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "start": "Start at kb/node_63520.json; rule: at each node pick max revision with status active, follow next until terminal."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "versioned_route",
+      "response": "{\"state_patch\":{\"facts\":{\"o1\":\"node_63520: max active rev=4 -> next 39094. rev9 revoked decoy.\"}},\"action\":{\"action\":\"bash\",\"command\":\"cd kb && python3 -c \\\"\\nimport json,os\\ncur=63520\\nseen=[]\\nwhile True:\\n    d=json.load(open('node_%d.json'%cur))\\n    act=[r for r in d if r.get('status')=='active']\\n    best=max(act,key=lambda r:r['revision'])\\n    seen.append((cur,best['revision'],best.get('next'),best.get('release_code')))\\n    if 'next' not in best:\\n        print('TERMINAL',cur,best)\\n        break\\n    cur=best['next']\\nprint(seen)\\n\\\"\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "start": "Start at kb/node_63520.json; rule: at each node pick max revision with status active, follow next until terminal.",
+          "o1": "node_63520: max active rev=4 -> next 39094. rev9 revoked decoy."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "versioned_route",
+      "response": "{\"state_patch\":{\"facts\":{\"o2\":\"Traversal from 63520 via max active rev at each node ends at 55365 with release_code RELEASE-420718.\"},\"artifacts\":{\"path\":\"63520->39094->53496->67203->85925->49483->53090->91320->41438->48052->83934->18044->53126->49514->99832->90647->11488->83472->51366->54699->66013->41023->35012->55365\"}},\"action\":{\"action\":\"final\",\"answer\":\"RELEASE-420718\"}}",
+      "state": {
+        "artifacts": {
+          "path": "63520->39094->53496->67203->85925->49483->53090->91320->41438->48052->83934->18044->53126->49514->99832->90647->11488->83472->51366->54699->66013->41023->35012->55365"
+        },
+        "facts": {
+          "start": "Start at kb/node_63520.json; rule: at each node pick max revision with status active, follow next until terminal.",
+          "o1": "node_63520: max active rev=4 -> next 39094. rev9 revoked decoy.",
+          "o2": "Traversal from 63520 via max active rev at each node ends at 55365 with release_code RELEASE-420718."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\n  \"state_patch\": {\n    \"facts\": {\n      \"o0\": \"Workspace ready. Files: SPEC.md, library.py, test_mylib.py\"\n    }\n  },\n  \"action\": {\n    \"action\": \"read\",\n    \"path\": \"SPEC.md\"\n  }\n}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py"
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\"state_patch\":{\"facts\":{\"o1\":\"SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account.\"}},\"action\":{\"action\":\"read\",\"path\":\"library.py\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py",
+          "o1": "SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\"state_patch\":{\"facts\":{\"o2\":\"library.py has 4 stub functions: merge_intervals just sorts; allocate uses round(); unique_latest uses dict last-wins but unsorted; rolling_net returns dict(events) without summing deltas.\"}},\"action\":{\"action\":\"read\",\"path\":\"test_mylib.py\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py",
+          "o1": "SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account.",
+          "o2": "library.py has 4 stub functions: merge_intervals just sorts; allocate uses round(); unique_latest uses dict last-wins but unsorted; rolling_net returns dict(events) without summing deltas."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\"state_patch\": {\"facts\": {\"o4\": \"test_mylib.py checks: merge_intervals([(5,8),(1,3),(3,6)])==[(1,8)]; allocate(5,[1,1,1])==[2,2,1]; unique_latest keeps max rev sorted by id; rolling_net sums deltas per account.\"}}, \"action\": {\"action\": \"write\", \"path\": \"library.py\", \"content\": \"def merge_intervals(intervals):\\n    if not intervals:\\n        return []\\n    sorted_intervals = sorted(intervals)\\n    merged = []\\n    for start, end in sorted_intervals:\\n        if not merged or start > merged[-1][1]:\\n            merged.append([start, end])\\n        else:\\n            merged[-1][1] = max(merged[-1][1], end)\\n    return [tuple(x) for x in merged]\\n\\ndef allocate(amount, weights):\\n    if not weights:\\n        return []\\n    total_weight = sum(weights)\\n    if total_weight == 0:\\n        return [0] * len(weights)\\n    raw = [amount * w / total_weight for w in weights]\\n    floors = [int(x) for x in raw]\\n    remainder = amount - sum(floors)\\n    remainders = [(raw[i] - floors[i], i) for i in range(len(weights))]\\n    remainders.sort(key=lambda x: (-x[0], x[1]))\\n    for i in range(remainder):\\n        floors[remainders[i][1]] += 1\\n    return floors\\n\\ndef unique_latest(records):\\n    latest = {}\\n    for r in records:\\n        rid = r['id']\\n        rev = r['revision']\\n        if rid not in latest or rev >= latest[rid]['revision']:\\n            latest[rid] = r\\n    return sorted(latest.values(), key=lambda x: x['id'])\\n\\ndef rolling_net(events):\\n    net = {}\\n    for account, delta in events:\\n        net[account] = net.get(account, 0) + delta\\n    return net\\n\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py",
+          "o1": "SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account.",
+          "o2": "library.py has 4 stub functions: merge_intervals just sorts; allocate uses round(); unique_latest uses dict last-wins but unsorted; rolling_net returns dict(events) without summing deltas.",
+          "o4": "test_mylib.py checks: merge_intervals([(5,8),(1,3),(3,6)])==[(1,8)]; allocate(5,[1,1,1])==[2,2,1]; unique_latest keeps max rev sorted by id; rolling_net sums deltas per account."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\"state_patch\": {\"facts\": {\"o5\": \"library.py updated with correct implementations for all 4 functions per SPEC.md.\"}}, \"action\": {\"action\": \"bash\", \"command\": \"python3 test_mylib.py\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py",
+          "o1": "SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account.",
+          "o2": "library.py has 4 stub functions: merge_intervals just sorts; allocate uses round(); unique_latest uses dict last-wins but unsorted; rolling_net returns dict(events) without summing deltas.",
+          "o4": "test_mylib.py checks: merge_intervals([(5,8),(1,3),(3,6)])==[(1,8)]; allocate(5,[1,1,1])==[2,2,1]; unique_latest keeps max rev sorted by id; rolling_net sums deltas per account.",
+          "o5": "library.py updated with correct implementations for all 4 functions per SPEC.md."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    },
+    {
+      "task_id": "intervals_and_ledger",
+      "response": "{\"state_patch\":{\"facts\":{\"o6\":\"test_mylib.py passed: 4 tests OK.\"}},\"action\":{\"action\":\"final\",\"answer\":\"DONE\"}}",
+      "state": {
+        "artifacts": {},
+        "facts": {
+          "o0": "Workspace ready. Files: SPEC.md, library.py, test_mylib.py",
+          "o1": "SPEC: merge_intervals merges overlaps+touching, returns sorted tuples, no mutate. allocate uses largest remainder, exact int. unique_latest keeps max revision (last on tie), sorted by id, no mutate. rolling_net sums deltas per account.",
+          "o2": "library.py has 4 stub functions: merge_intervals just sorts; allocate uses round(); unique_latest uses dict last-wins but unsorted; rolling_net returns dict(events) without summing deltas.",
+          "o4": "test_mylib.py checks: merge_intervals([(5,8),(1,3),(3,6)])==[(1,8)]; allocate(5,[1,1,1])==[2,2,1]; unique_latest keeps max rev sorted by id; rolling_net sums deltas per account.",
+          "o5": "library.py updated with correct implementations for all 4 functions per SPEC.md.",
+          "o6": "test_mylib.py passed: 4 tests OK."
+        },
+        "hypotheses": {},
+        "open_questions": {},
+        "rejected": {}
+      }
+    }
+  ]
+}

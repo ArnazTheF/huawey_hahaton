@@ -1,0 +1,8 @@
+{
+  "task_id": "versioned_route",
+  "task_type": "search",
+  "instruction": "Find the release code reachable from node 10600 using kb/. Each node has historical revision records. Select the greatest revision number with status active at EACH node; revoked records are never valid. Follow its next field until a terminal record. Submit only that terminal release_code. Other terminals and old revisions are decoys. You may automate traversal.",
+  "reward": 3,
+  "expected": "RELEASE-642741",
+  "check": "exact_str"
+}

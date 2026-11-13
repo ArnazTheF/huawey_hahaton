@@ -1,0 +1,9 @@
+{
+  "task_id": "working_days",
+  "task_type": "math",
+  "instruction": "How many Monday-Friday days are there from 2026-02-01 through 2026-04-30 inclusive, excluding holidays 2026-02-17, 2026-03-09, 2026-04-10? Compute with Python. Submit only the integer.",
+  "reward": 4,
+  "expected": "61",
+  "check": "exact_int",
+  "impossible": false
+}

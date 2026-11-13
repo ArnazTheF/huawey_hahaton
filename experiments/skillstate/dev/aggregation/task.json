@@ -1,0 +1,9 @@
+{
+  "task_id": "aggregation",
+  "task_type": "data_analysis",
+  "instruction": "Read records.csv. Sum quantity for area south and periods 3 through 8 inclusive. Submit only an integer.",
+  "reward": 2,
+  "expected": "646",
+  "check": "exact_int",
+  "impossible": false
+}

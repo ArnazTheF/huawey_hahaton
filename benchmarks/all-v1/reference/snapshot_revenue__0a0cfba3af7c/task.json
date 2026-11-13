@@ -1,0 +1,9 @@
+{
+  "task_id": "snapshot_revenue__0a0cfba3af7c",
+  "task_type": "data_analysis",
+  "instruction": "Read snapshots.csv. For each order_id keep the greatest revision; if tied keep the LAST file occurrence. Include only orders whose selected status is open. Sum units*unit_cents using integer arithmetic. Submit only total cents.",
+  "reward": 4,
+  "expected": "438293",
+  "check": "exact_int",
+  "impossible": false
+}

@@ -1,0 +1,9 @@
+{
+  "task_id": "linked_lookup__3c72fdc8de45",
+  "task_type": "search",
+  "instruction": "Find the terminal code by following next links starting at node_6655.txt. Only the reachable terminal is valid. Submit only its code.",
+  "reward": 4,
+  "expected": "CODE-88463",
+  "check": "exact_str",
+  "impossible": false
+}

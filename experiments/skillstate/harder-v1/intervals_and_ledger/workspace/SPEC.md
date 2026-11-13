@@ -1,0 +1,5 @@
+Implement four independent functions without changing signatures.
+merge_intervals(intervals): input pairs [start,end] with start<=end, unsorted. Return a sorted list of tuples, merging overlaps AND touching boundaries. Empty input -> []. Do not mutate the input.
+allocate(total, weights): total is a nonnegative integer; weights a nonempty list of nonnegative integers with positive sum. Return integer shares summing to total using largest remainder apportionment: floor(total*w/sum(weights)), then distribute remaining units by descending remainder, ties by lower original index. Use exact integer arithmetic, including huge integers.
+unique_latest(rows): list of dicts with id and revision (integer) and arbitrary data. For each id keep its greatest revision; ties keep LAST occurrence. Return chosen dicts sorted by id. Do not mutate input.
+rolling_net(events): events are (account, delta) pairs, delta integer. Return a dict of each account's balance, accumulating all deltas, preserving accounts with zero or negative balance. Empty input -> {}.

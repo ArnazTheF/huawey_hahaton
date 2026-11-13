@@ -1,0 +1,37 @@
+{
+  "employees": [
+    {
+      "id": "e1",
+      "name": "Mira",
+      "active": false,
+      "manager_id": "m0"
+    },
+    {
+      "id": "e2",
+      "name": "Mira",
+      "active": true,
+      "manager_id": "m3",
+      "old_manager_id": "m0"
+    }
+  ],
+  "managers": [
+    {
+      "id": "m0",
+      "office_id": "o0"
+    },
+    {
+      "id": "m3",
+      "office_id": "o7"
+    }
+  ],
+  "offices": [
+    {
+      "id": "o0",
+      "canonical_city": "Osaka"
+    },
+    {
+      "id": "o7",
+      "canonical_city": "Tallinn"
+    }
+  ]
+}

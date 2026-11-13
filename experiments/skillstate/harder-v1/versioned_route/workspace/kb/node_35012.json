@@ -1,0 +1,17 @@
+[
+  {
+    "revision": 4,
+    "status": "active",
+    "next": 55365
+  },
+  {
+    "revision": 1,
+    "status": "active",
+    "release_code": "OLD-DECOY"
+  },
+  {
+    "revision": 9,
+    "status": "revoked",
+    "release_code": "REVOKED-DECOY"
+  }
+]

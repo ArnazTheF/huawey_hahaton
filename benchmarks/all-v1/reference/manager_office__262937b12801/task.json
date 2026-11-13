@@ -1,0 +1,9 @@
+{
+  "task_id": "manager_office__262937b12801",
+  "task_type": "search",
+  "instruction": "Using kb.json: find the active employee named Mira, follow her current manager_id, then that manager office_id, and return the office canonical_city. Ignore inactive employees and old_manager_id. Submit only the city.",
+  "reward": 1,
+  "expected": "Tallinn",
+  "check": "exact_str",
+  "impossible": false
+}

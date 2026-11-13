@@ -1,0 +1,9 @@
+{
+  "task_id": "arithmetic",
+  "task_type": "math",
+  "instruction": "Compute floor((695 - 3*12)/7) using Python. Submit only the integer.",
+  "reward": 2,
+  "expected": "94",
+  "check": "exact_int",
+  "impossible": false
+}

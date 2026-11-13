@@ -1,0 +1,1 @@
+topological_order(nodes, edges): nodes is a list of unique strings. Directed edges (u,v) mean u before v. Return a topological order of ALL nodes. At each step choose lexicographically smallest currently available node. Duplicate edges must not change the result. Empty nodes -> []. Raise ValueError on any cycle. Do not mutate nodes or edges. All edge endpoints belong to nodes.

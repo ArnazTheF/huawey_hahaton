@@ -1,0 +1,697 @@
+{
+  "note": "Retrospective descriptive replay; no future usage used at each prediction. Not an independent validation dataset; no budget/quality conclusions.",
+  "calls": 85,
+  "cold_starts": 3,
+  "metrics": {
+    "legacy": {
+      "mae": 3862.7176470588233,
+      "underestimates": 0
+    },
+    "calibrated": {
+      "mae": 1568.2117647058824,
+      "underestimates": 0
+    }
+  },
+  "rows": [
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 350,
+      "legacy": 1839,
+      "calibrated": 1839,
+      "cold_start": true
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 411,
+      "legacy": 2080,
+      "calibrated": 915,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 1211,
+      "legacy": 3975,
+      "calibrated": 2475,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 10674,
+      "legacy": 18266,
+      "calibrated": 15517,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 17862,
+      "legacy": 28293,
+      "calibrated": 26421,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 973,
+      "legacy": 3370,
+      "calibrated": 2346,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1034,
+      "legacy": 3611,
+      "calibrated": 2523,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1222,
+      "legacy": 4240,
+      "calibrated": 2983,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1778,
+      "legacy": 6272,
+      "calibrated": 4472,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1867,
+      "legacy": 6597,
+      "calibrated": 4710,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 322,
+      "legacy": 1666,
+      "calibrated": 1098,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 383,
+      "legacy": 1907,
+      "calibrated": 1274,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 656,
+      "legacy": 3215,
+      "calibrated": 2232,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 790,
+      "legacy": 3758,
+      "calibrated": 2630,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1041,
+      "legacy": 4570,
+      "calibrated": 3225,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 2089,
+      "legacy": 8506,
+      "calibrated": 6109,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 3103,
+      "legacy": 12306,
+      "calibrated": 8893,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 3210,
+      "legacy": 12736,
+      "calibrated": 9208,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/history/tasks/.baseline/20261113-021655-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 3873,
+      "legacy": 14458,
+      "calibrated": 10470,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 571,
+      "legacy": 2875,
+      "calibrated": 2875,
+      "cold_start": true
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 1078,
+      "legacy": 4257,
+      "calibrated": 2198,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 1202,
+      "legacy": 4998,
+      "calibrated": 2491,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 1221,
+      "legacy": 5065,
+      "calibrated": 2525,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1194,
+      "legacy": 4406,
+      "calibrated": 2103,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1552,
+      "legacy": 5636,
+      "calibrated": 2928,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1576,
+      "legacy": 5693,
+      "calibrated": 2966,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1601,
+      "legacy": 5750,
+      "calibrated": 3005,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1626,
+      "legacy": 5807,
+      "calibrated": 3043,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1651,
+      "legacy": 5864,
+      "calibrated": 3082,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1676,
+      "legacy": 5921,
+      "calibrated": 3120,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1701,
+      "legacy": 5978,
+      "calibrated": 3159,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1726,
+      "legacy": 6035,
+      "calibrated": 3197,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1741,
+      "legacy": 6116,
+      "calibrated": 3234,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1609,
+      "legacy": 5713,
+      "calibrated": 3009,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1616,
+      "legacy": 5721,
+      "calibrated": 3018,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1622,
+      "legacy": 5728,
+      "calibrated": 3026,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1628,
+      "legacy": 5735,
+      "calibrated": 3033,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1634,
+      "legacy": 5742,
+      "calibrated": 3041,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1639,
+      "legacy": 5748,
+      "calibrated": 3048,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 543,
+      "legacy": 2702,
+      "calibrated": 1161,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1067,
+      "legacy": 5255,
+      "calibrated": 2211,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1083,
+      "legacy": 5329,
+      "calibrated": 2247,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 835,
+      "legacy": 3940,
+      "calibrated": 1812,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1113,
+      "legacy": 5473,
+      "calibrated": 2295,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 835,
+      "legacy": 3940,
+      "calibrated": 1812,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1113,
+      "legacy": 5473,
+      "calibrated": 2295,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 835,
+      "legacy": 3940,
+      "calibrated": 1812,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1113,
+      "legacy": 5473,
+      "calibrated": 2295,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 835,
+      "legacy": 3940,
+      "calibrated": 1812,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1115,
+      "legacy": 5475,
+      "calibrated": 2297,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1116,
+      "legacy": 5476,
+      "calibrated": 2299,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1070,
+      "legacy": 4478,
+      "calibrated": 2256,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1116,
+      "legacy": 5476,
+      "calibrated": 2299,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1116,
+      "legacy": 5476,
+      "calibrated": 2299,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1116,
+      "legacy": 5476,
+      "calibrated": 2299,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 838,
+      "legacy": 3943,
+      "calibrated": 1816,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1116,
+      "legacy": 5476,
+      "calibrated": 2299,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 837,
+      "legacy": 3942,
+      "calibrated": 1815,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1115,
+      "legacy": 5475,
+      "calibrated": 2297,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 837,
+      "legacy": 3942,
+      "calibrated": 1815,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1115,
+      "legacy": 5475,
+      "calibrated": 2297,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 837,
+      "legacy": 3942,
+      "calibrated": 1815,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1115,
+      "legacy": 5475,
+      "calibrated": 2297,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 836,
+      "legacy": 3941,
+      "calibrated": 1814,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1114,
+      "legacy": 5474,
+      "calibrated": 2296,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/hybrid/tasks/.baseline/20261113-021854-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 836,
+      "legacy": 3941,
+      "calibrated": 1814,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 571,
+      "legacy": 2875,
+      "calibrated": 2875,
+      "cold_start": true
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 843,
+      "legacy": 3661,
+      "calibrated": 1723,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 764,
+      "legacy": 3690,
+      "calibrated": 1631,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "net_revenue",
+      "actual": 1040,
+      "legacy": 4678,
+      "calibrated": 2108,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1194,
+      "legacy": 4406,
+      "calibrated": 2103,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1393,
+      "legacy": 5092,
+      "calibrated": 2560,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "versioned_route",
+      "actual": 1918,
+      "legacy": 5844,
+      "calibrated": 3051,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 543,
+      "legacy": 2702,
+      "calibrated": 1161,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 785,
+      "legacy": 3906,
+      "calibrated": 1640,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 801,
+      "legacy": 3980,
+      "calibrated": 1676,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 699,
+      "legacy": 3385,
+      "calibrated": 1495,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 856,
+      "legacy": 3851,
+      "calibrated": 1794,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 1112,
+      "legacy": 4837,
+      "calibrated": 2183,
+      "cold_start": false
+    },
+    {
+      "trace": "runs/skillstate-harder-v1/state/tasks/.baseline/20261113-021824-1.jsonl",
+      "task_id": "intervals_and_ledger",
+      "actual": 788,
+      "legacy": 3735,
+      "calibrated": 1728,
+      "cold_start": false
+    }
+  ]
+}

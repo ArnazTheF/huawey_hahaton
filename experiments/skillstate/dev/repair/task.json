@@ -1,0 +1,9 @@
+{
+  "task_id": "repair",
+  "task_type": "coding",
+  "instruction": "Fix normalize.py so test_mylib.py passes. Preserve tests. Return DONE when verified. normalize removes empty strings and trims and lowercases remaining words, preserving order.",
+  "reward": 4,
+  "expected": "tests_pass",
+  "check": "unittest",
+  "impossible": false
+}

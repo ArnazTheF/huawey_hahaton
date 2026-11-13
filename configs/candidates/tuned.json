@@ -1,0 +1,23 @@
+{
+  "flags": [
+    "--output-format",
+    "json_schema",
+    "--schema-accounting",
+    "messages",
+    "--edit-tool",
+    "--edit-domains",
+    "data_analysis",
+    "math",
+    "search",
+    "generic",
+    "--progress-state",
+    "--progress-domains",
+    "data_analysis",
+    "math",
+    "search",
+    "generic",
+    "--evidence-policy",
+    "precise"
+  ],
+  "status": "candidate_under_evaluation"
+}

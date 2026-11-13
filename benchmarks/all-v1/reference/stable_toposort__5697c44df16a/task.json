@@ -1,0 +1,9 @@
+{
+  "task_id": "stable_toposort__5697c44df16a",
+  "task_type": "coding",
+  "instruction": "Fix library.py per SPEC.md. Preserve test_mylib.py. Use standard Python. Run tests and submit DONE. Hidden tests cover the specification edge cases.",
+  "reward": 5,
+  "expected": "tests_pass",
+  "check": "unittest",
+  "impossible": false
+}

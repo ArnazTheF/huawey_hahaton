@@ -1,0 +1,12 @@
+{
+  "attempts": 26,
+  "families": 8,
+  "models": [
+    "qwen3.8-27b-noreason"
+  ],
+  "skipped_records": 0,
+  "leave_family_out_predictions": 0,
+  "leave_family_out_abstentions": 26,
+  "note": "Groups are number-normalized instruction templates, not verified semantic families. Whole-group holdout; sparse pairs abstain. No generalization claim.",
+  "evaluation": []
+}

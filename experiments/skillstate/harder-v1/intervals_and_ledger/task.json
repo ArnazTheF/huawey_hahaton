@@ -1,0 +1,8 @@
+{
+  "task_id": "intervals_and_ledger",
+  "task_type": "coding",
+  "instruction": "Fix library.py according to SPEC.md. Preserve tests. Use only Python standard library. Run test_mylib.py and submit DONE only after tests pass. Hidden tests also check the documented edge cases.",
+  "reward": 5,
+  "expected": "tests_pass",
+  "check": "unittest"
+}

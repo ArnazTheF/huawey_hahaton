@@ -1,0 +1,1599 @@
+{
+  "schema": 1,
+  "kind": "empirical-family-baseline",
+  "rows": [
+    {
+      "family": "c661d0740474297b83eb",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 194,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 3114.7000000000007,
+      "reason": "task_budget",
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 45.2
+        },
+        {
+          "calls": 2,
+          "spent": 97.5
+        },
+        {
+          "calls": 3,
+          "spent": 177.1
+        },
+        {
+          "calls": 4,
+          "spent": 272.1
+        },
+        {
+          "calls": 5,
+          "spent": 884.2
+        },
+        {
+          "calls": 6,
+          "spent": 1584.1
+        },
+        {
+          "calls": 7,
+          "spent": 1912.3999999999999
+        },
+        {
+          "calls": 8,
+          "spent": 2480.3999999999996
+        },
+        {
+          "calls": 9,
+          "spent": 3114.7
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "intervals_and_ledger",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "f1e2e0695d0006eb3a8d",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 363,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 3427.8,
+      "reason": "task_budget",
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 68.0
+        },
+        {
+          "calls": 2,
+          "spent": 123.1
+        },
+        {
+          "calls": 3,
+          "spent": 258.2
+        },
+        {
+          "calls": 4,
+          "spent": 1340.6000000000001
+        },
+        {
+          "calls": 5,
+          "spent": 3427.8
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "net_revenue",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "0ea4a37213e8e3261725",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 364,
+        "file_count": 74,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 1024.3999999999996,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 115.3
+        },
+        {
+          "calls": 2,
+          "spent": 239.7
+        },
+        {
+          "calls": 3,
+          "spent": 623.9
+        },
+        {
+          "calls": 4,
+          "spent": 817.7
+        },
+        {
+          "calls": 5,
+          "spent": 1024.4
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "versioned_route",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "c661d0740474297b83eb",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 194,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 1412.3999999999999,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 126.3
+        },
+        {
+          "calls": 2,
+          "spent": 296.8
+        },
+        {
+          "calls": 3,
+          "spent": 448.9
+        },
+        {
+          "calls": 4,
+          "spent": 582.8
+        },
+        {
+          "calls": 5,
+          "spent": 1140.4
+        },
+        {
+          "calls": 6,
+          "spent": 1300.6000000000001
+        },
+        {
+          "calls": 7,
+          "spent": 1412.4
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "intervals_and_ledger",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "f1e2e0695d0006eb3a8d",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 363,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 939.8,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 143.1
+        },
+        {
+          "calls": 2,
+          "spent": 356.4
+        },
+        {
+          "calls": 3,
+          "spent": 761.8
+        },
+        {
+          "calls": 4,
+          "spent": 939.8
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "net_revenue",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "0ea4a37213e8e3261725",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 364,
+        "file_count": 74,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 943.5,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 208.4
+        },
+        {
+          "calls": 2,
+          "spent": 538.7
+        },
+        {
+          "calls": 3,
+          "spent": 943.5
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "versioned_route",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "c661d0740474297b83eb",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 194,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 3922.7000000000035,
+      "reason": "max_steps",
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 93.3
+        },
+        {
+          "calls": 2,
+          "spent": 289.0
+        },
+        {
+          "calls": 3,
+          "spent": 469.3
+        },
+        {
+          "calls": 4,
+          "spent": 574.8
+        },
+        {
+          "calls": 5,
+          "spent": 708.0999999999999
+        },
+        {
+          "calls": 6,
+          "spent": 813.5999999999999
+        },
+        {
+          "calls": 7,
+          "spent": 946.8999999999999
+        },
+        {
+          "calls": 8,
+          "spent": 1052.3999999999999
+        },
+        {
+          "calls": 9,
+          "spent": 1185.6999999999998
+        },
+        {
+          "calls": 10,
+          "spent": 1291.1999999999998
+        },
+        {
+          "calls": 11,
+          "spent": 1424.6999999999998
+        },
+        {
+          "calls": 12,
+          "spent": 1530.4999999999998
+        },
+        {
+          "calls": 13,
+          "spent": 1664.0999999999997
+        },
+        {
+          "calls": 14,
+          "spent": 1771.8999999999996
+        },
+        {
+          "calls": 15,
+          "spent": 1900.8999999999996
+        },
+        {
+          "calls": 16,
+          "spent": 2006.6999999999996
+        },
+        {
+          "calls": 17,
+          "spent": 2140.2999999999997
+        },
+        {
+          "calls": 18,
+          "spent": 2246.1
+        },
+        {
+          "calls": 19,
+          "spent": 2379.7
+        },
+        {
+          "calls": 20,
+          "spent": 2485.5
+        },
+        {
+          "calls": 21,
+          "spent": 2619.1
+        },
+        {
+          "calls": 22,
+          "spent": 2724.9
+        },
+        {
+          "calls": 23,
+          "spent": 2858.5
+        },
+        {
+          "calls": 24,
+          "spent": 2964.2
+        },
+        {
+          "calls": 25,
+          "spent": 3097.7
+        },
+        {
+          "calls": 26,
+          "spent": 3203.3999999999996
+        },
+        {
+          "calls": 27,
+          "spent": 3336.8999999999996
+        },
+        {
+          "calls": 28,
+          "spent": 3442.5999999999995
+        },
+        {
+          "calls": 29,
+          "spent": 3576.0999999999995
+        },
+        {
+          "calls": 30,
+          "spent": 3681.6999999999994
+        },
+        {
+          "calls": 31,
+          "spent": 3815.0999999999995
+        },
+        {
+          "calls": 32,
+          "spent": 3922.6999999999994
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "intervals_and_ledger",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "f1e2e0695d0006eb3a8d",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 363,
+        "file_count": 3,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 766.1999999999999,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 98.1
+        },
+        {
+          "calls": 2,
+          "spent": 424.9
+        },
+        {
+          "calls": 3,
+          "spent": 587.0999999999999
+        },
+        {
+          "calls": 4,
+          "spent": 766.1999999999999
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "net_revenue",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "0ea4a37213e8e3261725",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 364,
+        "file_count": 74,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 32,
+        "max_output_tokens": 1000,
+        "task_budget": 4500,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 3901.199999999999,
+      "reason": "task_budget",
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 175.4
+        },
+        {
+          "calls": 2,
+          "spent": 389.6
+        },
+        {
+          "calls": 3,
+          "spent": 606.2
+        },
+        {
+          "calls": 4,
+          "spent": 825.3000000000001
+        },
+        {
+          "calls": 5,
+          "spent": 1046.9
+        },
+        {
+          "calls": 6,
+          "spent": 1271.0
+        },
+        {
+          "calls": 7,
+          "spent": 1497.6
+        },
+        {
+          "calls": 8,
+          "spent": 1726.6999999999998
+        },
+        {
+          "calls": 9,
+          "spent": 1958.2999999999997
+        },
+        {
+          "calls": 10,
+          "spent": 2264.3999999999996
+        },
+        {
+          "calls": 11,
+          "spent": 2521.2999999999997
+        },
+        {
+          "calls": 12,
+          "spent": 2784.8999999999996
+        },
+        {
+          "calls": 13,
+          "spent": 3055.0999999999995
+        },
+        {
+          "calls": 14,
+          "spent": 3331.8999999999996
+        },
+        {
+          "calls": 15,
+          "spent": 3615.2999999999997
+        },
+        {
+          "calls": 16,
+          "spent": 3901.2
+        }
+      ],
+      "source": "runs/skillstate-harder-v1/results.json",
+      "task_id": "versioned_route",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "5b8aab84ed555c2b5969",
+      "features": {
+        "task_type": "generic",
+        "instruction_chars": 183,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": null,
+        "task_budget": null,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 239.4000000000001,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 86.7
+        },
+        {
+          "calls": 2,
+          "spent": 239.39999999999998
+        }
+      ],
+      "source": "runs/skillstate-hybrid-fix/results.json",
+      "task_id": "missing_source",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "a1c12b9cee7730eef773",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 176,
+        "file_count": 2,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": null,
+        "task_budget": null,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 886.0999999999999,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 106.4
+        },
+        {
+          "calls": 2,
+          "spent": 198.5
+        },
+        {
+          "calls": 3,
+          "spent": 300.8
+        },
+        {
+          "calls": 4,
+          "spent": 420.9
+        },
+        {
+          "calls": 5,
+          "spent": 525.5
+        },
+        {
+          "calls": 6,
+          "spent": 672.9
+        },
+        {
+          "calls": 7,
+          "spent": 780.3
+        },
+        {
+          "calls": 8,
+          "spent": 886.0999999999999
+        }
+      ],
+      "source": "runs/skillstate-hybrid-fix/results.json",
+      "task_id": "repair",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "697404e63118ffa92823",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 104,
+        "file_count": 1,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 531.7,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 40.7
+        },
+        {
+          "calls": 2,
+          "spent": 313.7
+        },
+        {
+          "calls": 3,
+          "spent": 531.7
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "aggregation",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "4df3d7de38dd1ad21bb0",
+      "features": {
+        "task_type": "math",
+        "instruction_chars": 68,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 112.1,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 57.4
+        },
+        {
+          "calls": 2,
+          "spent": 112.1
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "arithmetic",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "1a050836f76e45fccdeb",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 133,
+        "file_count": 11,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 739.2999999999998,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 55.5
+        },
+        {
+          "calls": 2,
+          "spent": 123.8
+        },
+        {
+          "calls": 3,
+          "spent": 201.89999999999998
+        },
+        {
+          "calls": 4,
+          "spent": 289.79999999999995
+        },
+        {
+          "calls": 5,
+          "spent": 387.49999999999994
+        },
+        {
+          "calls": 6,
+          "spent": 494.99999999999994
+        },
+        {
+          "calls": 7,
+          "spent": 612.3
+        },
+        {
+          "calls": 8,
+          "spent": 739.3
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "linked_lookup",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "5b8aab84ed555c2b5969",
+      "features": {
+        "task_type": "generic",
+        "instruction_chars": 183,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 105.69999999999982,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 42.6
+        },
+        {
+          "calls": 2,
+          "spent": 105.7
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "missing_source",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "a1c12b9cee7730eef773",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 176,
+        "file_count": 2,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "history",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 370.9000000000001,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 42.3
+        },
+        {
+          "calls": 2,
+          "spent": 123.7
+        },
+        {
+          "calls": 3,
+          "spent": 197.7
+        },
+        {
+          "calls": 4,
+          "spent": 282.2
+        },
+        {
+          "calls": 5,
+          "spent": 370.9
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "repair",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "697404e63118ffa92823",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 104,
+        "file_count": 1,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 505.5999999999999,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 84.8
+        },
+        {
+          "calls": 2,
+          "spent": 396.3
+        },
+        {
+          "calls": 3,
+          "spent": 505.6
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "aggregation",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "4df3d7de38dd1ad21bb0",
+      "features": {
+        "task_type": "math",
+        "instruction_chars": 68,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 161.5,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 87.5
+        },
+        {
+          "calls": 2,
+          "spent": 161.5
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "arithmetic",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "1a050836f76e45fccdeb",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 133,
+        "file_count": 11,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 931.1000000000001,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 110.6
+        },
+        {
+          "calls": 2,
+          "spent": 220.7
+        },
+        {
+          "calls": 3,
+          "spent": 332.79999999999995
+        },
+        {
+          "calls": 4,
+          "spent": 446.9
+        },
+        {
+          "calls": 5,
+          "spent": 571.0
+        },
+        {
+          "calls": 6,
+          "spent": 689.1
+        },
+        {
+          "calls": 7,
+          "spent": 809.1
+        },
+        {
+          "calls": 8,
+          "spent": 931.1
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "linked_lookup",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "5b8aab84ed555c2b5969",
+      "features": {
+        "task_type": "generic",
+        "instruction_chars": 183,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 193.0999999999999,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 86.7
+        },
+        {
+          "calls": 2,
+          "spent": 193.10000000000002
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "missing_source",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "a1c12b9cee7730eef773",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 176,
+        "file_count": 2,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "state",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 864.0000000000002,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 110.4
+        },
+        {
+          "calls": 2,
+          "spent": 283.0
+        },
+        {
+          "calls": 3,
+          "spent": 483.7
+        },
+        {
+          "calls": 4,
+          "spent": 614.5
+        },
+        {
+          "calls": 5,
+          "spent": 737.2
+        },
+        {
+          "calls": 6,
+          "spent": 864.0
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "repair",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "697404e63118ffa92823",
+      "features": {
+        "task_type": "data_analysis",
+        "instruction_chars": 104,
+        "file_count": 1,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 732.3999999999999,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 62.8
+        },
+        {
+          "calls": 2,
+          "spent": 161.39999999999998
+        },
+        {
+          "calls": 3,
+          "spent": 603.0999999999999
+        },
+        {
+          "calls": 4,
+          "spent": 732.3999999999999
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "aggregation",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "4df3d7de38dd1ad21bb0",
+      "features": {
+        "task_type": "math",
+        "instruction_chars": 68,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": true,
+      "cost": 305.2,
+      "reason": null,
+      "censored": false,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 106.5
+        },
+        {
+          "calls": 2,
+          "spent": 189.2
+        },
+        {
+          "calls": 3,
+          "spent": 305.2
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "arithmetic",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "1a050836f76e45fccdeb",
+      "features": {
+        "task_type": "search",
+        "instruction_chars": 133,
+        "file_count": 11,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 841.3,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 106.6
+        },
+        {
+          "calls": 2,
+          "spent": 199.7
+        },
+        {
+          "calls": 3,
+          "spent": 322.1
+        },
+        {
+          "calls": 4,
+          "spent": 415.20000000000005
+        },
+        {
+          "calls": 5,
+          "spent": 537.6
+        },
+        {
+          "calls": 6,
+          "spent": 630.7
+        },
+        {
+          "calls": 7,
+          "spent": 719.0
+        },
+        {
+          "calls": 8,
+          "spent": 841.3
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "linked_lookup",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "5b8aab84ed555c2b5969",
+      "features": {
+        "task_type": "generic",
+        "instruction_chars": 183,
+        "file_count": 0,
+        "workspace_bytes": null,
+        "test_files": 0
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 606.0,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 64.7
+        },
+        {
+          "calls": 2,
+          "spent": 194.2
+        },
+        {
+          "calls": 3,
+          "spent": 310.4
+        },
+        {
+          "calls": 4,
+          "spent": 448.7
+        },
+        {
+          "calls": 5,
+          "spent": 606.0
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "missing_source",
+      "label_source": "external_grader"
+    },
+    {
+      "family": "a1c12b9cee7730eef773",
+      "features": {
+        "task_type": "coding",
+        "instruction_chars": 176,
+        "file_count": 2,
+        "workspace_bytes": null,
+        "test_files": 1
+      },
+      "feature_source": "initial_request; original byte sizes unavailable",
+      "model": "qwen3.8-27b-noreason",
+      "mode": "hybrid",
+      "settings": {
+        "response_protocol": "legacy",
+        "input_estimator": "legacy",
+        "budget_policy": "off",
+        "max_steps": 8,
+        "max_output_tokens": 600,
+        "task_budget": 1600,
+        "finish_output_tokens": null,
+        "finish_seconds": null
+      },
+      "success": false,
+      "cost": 796.0999999999997,
+      "reason": null,
+      "censored": true,
+      "prefixes": [
+        {
+          "calls": 0,
+          "spent": 0
+        },
+        {
+          "calls": 1,
+          "spent": 111.4
+        },
+        {
+          "calls": 2,
+          "spent": 195.2
+        },
+        {
+          "calls": 3,
+          "spent": 305.4
+        },
+        {
+          "calls": 4,
+          "spent": 391.2
+        },
+        {
+          "calls": 5,
+          "spent": 503.4
+        },
+        {
+          "calls": 6,
+          "spent": 591.1999999999999
+        },
+        {
+          "calls": 7,
+          "spent": 710.4
+        },
+        {
+          "calls": 8,
+          "spent": 796.1
+        }
+      ],
+      "source": "runs/skillstate-pilot-v1/results.json",
+      "task_id": "repair",
+      "label_source": "external_grader"
+    }
+  ],
+  "min_groups": 3
+}

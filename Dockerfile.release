@@ -1,0 +1,10 @@
+# Reuse the already-tested locked dependencies; no downloads or pip install.
+ARG BASE_IMAGE=huawei-baseline:tested
+FROM ${BASE_IMAGE}
+WORKDIR /app
+COPY baseline /app/baseline
+COPY run_agent.py run_solution.py /app/
+COPY scripts /app/scripts
+COPY models /app/models
+COPY configs /app/configs
+ENTRYPOINT ["python", "/app/run_solution.py"]

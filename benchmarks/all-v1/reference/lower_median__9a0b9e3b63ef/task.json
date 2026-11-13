@@ -1,0 +1,9 @@
+{
+  "task_id": "lower_median__9a0b9e3b63ef",
+  "task_type": "data_analysis",
+  "instruction": "Read readings.json; discard negative readings. Return the LOWER median of the remaining values (index (n-1)//2 after sorting). Keep duplicates. Submit only the integer.",
+  "reward": 1,
+  "expected": "52",
+  "check": "exact_int",
+  "impossible": false
+}

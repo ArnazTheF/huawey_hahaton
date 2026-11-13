@@ -1,0 +1,201 @@
+{
+  "schema": 1,
+  "cards": [
+    {
+      "id": "lesson-4df3d7de38dd1ad21bb0",
+      "family": "4df3d7de38dd1ad21bb0",
+      "description": "Compute floor((695 - 3*12)/7) using Python. Submit only the integer.",
+      "lesson": "Compute in Python, preserve integer rounding and operation order. Submit the calculated value without an extra command to write answer.txt.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-pilot-v1/results.json"
+    },
+    {
+      "id": "lesson-0ea4a37213e8e3261725",
+      "family": "0ea4a37213e8e3261725",
+      "description": "Find the release code reachable from node 63520 using kb/. Each node has historical revision records. Select the greatest revision number with status active at EACH node; revoked records are never valid. Follow its next field until a terminal record. Submit only that terminal release_code. Other terminals and old revisions are decoys. You may automate traversal.",
+      "lesson": "Use a short Python traversal for many linked files. Track visited identifiers and apply revision/status rules before following links. Ignore unrelated terminal values.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-harder-v1/results.json"
+    },
+    {
+      "id": "lesson-c661d0740474297b83eb",
+      "family": "c661d0740474297b83eb",
+      "description": "Fix library.py according to SPEC.md. Preserve tests. Use only Python standard library. Run test_mylib.py and submit DONE only after tests pass. Hidden tests also check the documented edge cases.",
+      "lesson": "Inspect requirements and tests together. Preserve tests. Implement documented edge cases, use exact integer arithmetic where required, and run provided unittest tests before DONE. Save a verified candidate rather than repeating unchanged reads.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-harder-v1/results.json"
+    },
+    {
+      "id": "lesson-f1e2e0695d0006eb3a8d",
+      "family": "f1e2e0695d0006eb3a8d",
+      "description": "Compute net paid revenue in integer cents for west-region customers in months 4 through 9 inclusive. Join customers.csv to orders.csv on customer_id; subtract every matching refund from refunds.csv, missing refund means zero. Exclude cancelled orders entirely, including their refunds. All amounts are integers; submit only the total. Do not assume row alignment.",
+      "lesson": "Inspect column names and a few rows only. Compute filtering, joins and aggregates in a Python script; avoid printing entire tables into the model context. Missing join matches need an explicit rule.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-harder-v1/results.json"
+    },
+    {
+      "id": "lesson-697404e63118ffa92823",
+      "family": "697404e63118ffa92823",
+      "description": "Read records.csv. Sum quantity for area south and periods 3 through 8 inclusive. Submit only an integer.",
+      "lesson": "Inspect column names and a few rows only. Compute filtering, joins and aggregates in a Python script; avoid printing entire tables into the model context. Missing join matches need an explicit rule.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-pilot-v1/results.json"
+    },
+    {
+      "id": "lesson-a1c12b9cee7730eef773",
+      "family": "a1c12b9cee7730eef773",
+      "description": "Fix normalize.py so test_mylib.py passes. Preserve tests. Return DONE when verified. normalize removes empty strings and trims and lowercases remaining words, preserving order.",
+      "lesson": "Inspect requirements and tests together. Preserve tests. Implement documented edge cases, use exact integer arithmetic where required, and run provided unittest tests before DONE. Save a verified candidate rather than repeating unchanged reads.",
+      "verification": "external_grader",
+      "derivation": "deterministic procedural template; not LLM-distilled EET",
+      "source": "runs/skillstate-pilot-v1/results.json"
+    }
+  ],
+  "behaviors": [
+    {
+      "family": "4df3d7de38dd1ad21bb0",
+      "description": "Compute floor((695 - 3*12)/7) using Python. Submit only the integer.",
+      "observations": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "mode": "history",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 259.2,
+          "seconds": 4.1
+        },
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "mode": "state",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 256.9,
+          "seconds": 2.8
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "mode": "history",
+          "answer": null,
+          "status": "skipped",
+          "cost": 731.7,
+          "seconds": 5.7
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "mode": "state",
+          "answer": null,
+          "status": "skipped",
+          "cost": 722.9,
+          "seconds": 5.8
+        },
+        {
+          "model": "qwen3.8-27b-noreason",
+          "mode": "history",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 258.0,
+          "seconds": 5.0
+        },
+        {
+          "model": "qwen3.8-27b-noreason",
+          "mode": "state",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 256.9,
+          "seconds": 6.1
+        },
+        {
+          "model": "qwen3.8-27b",
+          "mode": "history",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 207.2,
+          "seconds": 3.9
+        },
+        {
+          "model": "qwen3.8-27b",
+          "mode": "state",
+          "answer": "94",
+          "status": "submitted",
+          "cost": 433.0,
+          "seconds": 4.2
+        }
+      ]
+    },
+    {
+      "family": "a1c12b9cee7730eef773",
+      "description": "Fix normalize.py so test_mylib.py passes. Preserve tests. Return DONE when verified. normalize removes empty strings and trims and lowercases remaining words, preserving order.",
+      "observations": [
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "mode": "history",
+          "answer": null,
+          "status": "stopped",
+          "cost": 575.6,
+          "seconds": 5.5
+        },
+        {
+          "model": "qwen3.6-35b-a3b-noreason",
+          "mode": "state",
+          "answer": null,
+          "status": "stopped",
+          "cost": 608.0,
+          "seconds": 7.5
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "mode": "history",
+          "answer": null,
+          "status": "stopped",
+          "cost": 199.4,
+          "seconds": 2.0
+        },
+        {
+          "model": "qwen3.6-35b-a3b",
+          "mode": "state",
+          "answer": null,
+          "status": "stopped",
+          "cost": 198.7,
+          "seconds": 1.5
+        },
+        {
+          "model": "qwen3.8-27b-noreason",
+          "mode": "history",
+          "answer": null,
+          "status": "stopped",
+          "cost": 560.5,
+          "seconds": 11.0
+        },
+        {
+          "model": "qwen3.8-27b-noreason",
+          "mode": "state",
+          "answer": null,
+          "status": "stopped",
+          "cost": 658.1,
+          "seconds": 13.1
+        },
+        {
+          "model": "qwen3.8-27b",
+          "mode": "history",
+          "answer": null,
+          "status": "skipped",
+          "cost": 688.3,
+          "seconds": 15.8
+        },
+        {
+          "model": "qwen3.8-27b",
+          "mode": "state",
+          "answer": null,
+          "status": "skipped",
+          "cost": 344.1,
+          "seconds": 4.1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "task_id": "net_revenue__b8feeee90bef",
+  "task_type": "data_analysis",
+  "instruction": "Compute net paid revenue in integer cents for west-region customers in months 4 through 9 inclusive. Join customers.csv to orders.csv on customer_id; subtract every matching refund from refunds.csv, missing refund means zero. Exclude cancelled orders entirely, including their refunds. All amounts are integers; submit only the total. Do not assume row alignment.",
+  "reward": 4,
+  "expected": "4004999",
+  "check": "exact_int"
+}

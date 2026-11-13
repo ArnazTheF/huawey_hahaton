@@ -1,0 +1,9 @@
+{
+  "task_id": "integer_program",
+  "task_type": "math",
+  "instruction": "Starting from integer 137, apply instructions in ops.json in order. add adds value, multiply multiplies, divide uses floor integer division. Submit the final integer.",
+  "reward": 4,
+  "expected": "36",
+  "check": "exact_int",
+  "impossible": false
+}

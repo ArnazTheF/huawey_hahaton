@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-13",
+  "github_code": [
+    {
+      "url": "https://raw.githubusercontent.com/Nicolepcx/skill_state/main/skill_state/runtime.py",
+      "file": "/tmp/skillstate-research/skill_state/skill_state/runtime.py",
+      "bytes": 6204,
+      "sha256": "df580d3533d71c2c5fad17667e6719c06fc0104c82e196dc5573562f55a89438",
+      "git_blob_sha": "3c2a8c472262acfe3af9f84494cc4020cd9ebb29",
+      "matches_fetched_tree": true,
+      "line_count": 164
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Atakan-Emre/skillstate-kit/main/src/skillstate/runtime.py",
+      "file": "/tmp/skillstate-research/skillstate-kit/src/skillstate/runtime.py",
+      "bytes": 7768,
+      "sha256": "d2c856f649d19d5bbd6f11653d69dcabf7b4099e074c9865edd5d33339a3740d",
+      "git_blob_sha": "22b082a1a629ebb9cbb1cf79366113fa40a4c7ef",
+      "matches_fetched_tree": true,
+      "line_count": 179
+    },
+    {
+      "url": "https://raw.githubusercontent.com/toadharvard/pi-skill-state-runtime/main/src/runtime.js",
+      "file": "/tmp/skillstate-research/pi-skill-state-runtime/src/runtime.js",
+      "bytes": 16917,
+      "sha256": "82f55766af35c29cd02c8d3781a633151507c92c1e589f7cc2d3e5c934157f84",
+      "git_blob_sha": "30025f19d9baa7de744cd17b550c6d7f921e38b8",
+      "matches_fetched_tree": true,
+      "line_count": 425
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Nicolepcx/skill_state/main/skill_state/prompt.py",
+      "file": "/tmp/skillstate-research/skill_state/skill_state/prompt.py",
+      "bytes": 3002,
+      "sha256": "861221c1aed82a75f80dc887f222a95e492efbba25a3043475c116da3627de56",
+      "git_blob_sha": "32cd979b8fc616df4065a1ffa35de63287ca1c93",
+      "matches_fetched_tree": true,
+      "line_count": 77
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Atakan-Emre/skillstate-kit/main/src/skillstate/lifecycle.py",
+      "file": "/tmp/skillstate-research/skillstate-kit/src/skillstate/lifecycle.py",
+      "bytes": 9609,
+      "sha256": "1109f36a394982e48b15f4d2e12c2ff409bff8e17fd4593125bdfafedac0d63f",
+      "git_blob_sha": "109d39e5c1e8b33d576d86c90f394e277bed8353",
+      "matches_fetched_tree": true,
+      "line_count": 239
+    },
+    {
+      "url": "https://raw.githubusercontent.com/toadharvard/pi-skill-state-runtime/main/examples/software-task.json",
+      "file": "/tmp/skillstate-research/pi-skill-state-runtime/examples/software-task.json",
+      "bytes": 1553,
+      "sha256": "d6d1c12086e2789f9a406fb203ece9e11d72defab73c8b427b9b74ff5f093088",
+      "git_blob_sha": "4d9eaf23c48a393dd25f27292489c286087c2caa",
+      "matches_fetched_tree": true,
+      "line_count": 49
+    }
+  ],
+  "markov_agent": {
+    "metadata_url": "https://pypi.org/pypi/markov-agent/1.7.0/json",
+    "wheel_url": "https://files.pythonhosted.org/packages/d7/18/d2ddddedb36b11e79a06179bdab2c3b51e7fae6cdb0cb9ee829af49c52bb/markov_agent-1.7.0-py3-none-any.whl",
+    "sha256": "ac81d20c36afc7b17987c6cbbcfb3d515a900dd22f5f10f08efe7d444f053924",
+    "version": "1.7.0",
+    "files": {
+      "skill_state.py": {
+        "sha256": "a27cb53afb92bc8719333bee8c8db447b1c26fa00fff2bc9039124b1cabe0038",
+        "lines": 180
+      },
+      "prompt_template.jinja": {
+        "sha256": "1d80cb4fa6daa8dfbd684b41b99e9605d1e7de6e181b2659d9b49893c881afd1",
+        "lines": 48
+      },
+      "agent.py": {
+        "sha256": "684eec9e446e0a8cdfe36c01458a17c6dc5547760489546883b8e882a28dba28",
+        "lines": 35
+      },
+      "METADATA": {
+        "sha256": "09bb7c461e4c17662cb2c56b62a09ddab1f3c039a3cb318f2c2eb6a031d9a9f3",
+        "lines": 97
+      }
+    }
+  },
+  "execution": "Read-only source inspection. No third-party code was executed or installed. No competition API calls.",
+  "primary_documents": [
+    "https://arxiv.org/html/2608.26263v3",
+    "https://github.com/toadharvard/pi-skill-state-runtime",
+    "https://github.com/Atakan-Emre/skillstate-kit/blob/main/docs/benchmarks/coding-agent.md",
+    "https://pypi.org/project/markov-agent/1.7.0/",
+    "https://github.com/Nicolepcx/skill_state",
+    "https://arxiv.org/abs/2609.20804"
+  ],
+  "own_run_response_rejections": {
+    "runs": "runs/memory-success-replay-v1",
+    "groups": {
+      "json_or_response_contract": {
+        "calls": 17,
+        "cost": 5931.9
+      },
+      "premature_tool_in_submit": {
+        "calls": 2,
+        "cost": 241.8
+      },
+      "state_schema": {
+        "calls": 2,
+        "cost": 348.5
+      }
+    },
+    "total_cost": 19279.7,
+    "note": "Actual cost of responses rejected by parser, schema or phase contract; not all errors are syntactic and this is not a guaranteed recoverable saving."
+  }
+}

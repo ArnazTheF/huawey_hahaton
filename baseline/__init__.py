@@ -1,0 +1,1 @@
+"""Budget-aware competition baseline."""
